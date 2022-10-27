@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label8 = new System.Windows.Forms.Label();
             this.btnPop = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -117,7 +117,7 @@
             this.label8.Location = new System.Drawing.Point(305, 249);
             this.label8.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 23);
+            this.label8.Size = new System.Drawing.Size(55, 19);
             this.label8.TabIndex = 187;
             this.label8.Text = "Imagen";
             // 
@@ -251,7 +251,7 @@
             this.label11.Location = new System.Drawing.Point(34, 342);
             this.label11.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 23);
+            this.label11.Size = new System.Drawing.Size(38, 19);
             this.label11.TabIndex = 180;
             this.label11.Text = "Talla";
             // 
@@ -269,7 +269,7 @@
             "XL"});
             this.cbxTalla.Location = new System.Drawing.Point(38, 364);
             this.cbxTalla.Name = "cbxTalla";
-            this.cbxTalla.Size = new System.Drawing.Size(88, 29);
+            this.cbxTalla.Size = new System.Drawing.Size(88, 25);
             this.cbxTalla.TabIndex = 9;
             // 
             // nudStock
@@ -286,7 +286,7 @@
             0,
             0});
             this.nudStock.Name = "nudStock";
-            this.nudStock.Size = new System.Drawing.Size(88, 30);
+            this.nudStock.Size = new System.Drawing.Size(88, 25);
             this.nudStock.TabIndex = 5;
             this.nudStock.Tag = "";
             // 
@@ -299,7 +299,7 @@
             this.label2.Location = new System.Drawing.Point(450, 153);
             this.label2.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 23);
+            this.label2.Size = new System.Drawing.Size(44, 19);
             this.label2.TabIndex = 178;
             this.label2.Text = "Stock";
             // 
@@ -312,7 +312,7 @@
             this.label10.Location = new System.Drawing.Point(35, 249);
             this.label10.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 23);
+            this.label10.Size = new System.Drawing.Size(67, 19);
             this.label10.TabIndex = 176;
             this.label10.Text = "Ajustable";
             // 
@@ -363,7 +363,7 @@
             this.label7.Location = new System.Drawing.Point(37, 434);
             this.label7.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 23);
+            this.label7.Size = new System.Drawing.Size(61, 19);
             this.label7.TabIndex = 171;
             this.label7.Text = "Material";
             // 
@@ -376,7 +376,7 @@
             this.label6.Location = new System.Drawing.Point(35, 152);
             this.label6.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 23);
+            this.label6.Size = new System.Drawing.Size(115, 19);
             this.label6.TabIndex = 170;
             this.label6.Text = "Fecha de compra";
             // 
@@ -391,7 +391,7 @@
             this.dtpFechaCompra.Location = new System.Drawing.Point(38, 174);
             this.dtpFechaCompra.Name = "dtpFechaCompra";
             this.dtpFechaCompra.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpFechaCompra.Size = new System.Drawing.Size(232, 32);
+            this.dtpFechaCompra.Size = new System.Drawing.Size(232, 27);
             this.dtpFechaCompra.TabIndex = 3;
             // 
             // label4
@@ -403,7 +403,7 @@
             this.label4.Location = new System.Drawing.Point(450, 64);
             this.label4.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 23);
+            this.label4.Size = new System.Drawing.Size(69, 19);
             this.label4.TabIndex = 168;
             this.label4.Text = "Categoría";
             // 
@@ -421,7 +421,7 @@
             "D"});
             this.cbxCategoria.Location = new System.Drawing.Point(454, 86);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(88, 29);
+            this.cbxCategoria.Size = new System.Drawing.Size(88, 25);
             this.cbxCategoria.TabIndex = 2;
             // 
             // nudPrecio
@@ -444,7 +444,7 @@
             0,
             0});
             this.nudPrecio.Name = "nudPrecio";
-            this.nudPrecio.Size = new System.Drawing.Size(88, 30);
+            this.nudPrecio.Size = new System.Drawing.Size(88, 25);
             this.nudPrecio.TabIndex = 4;
             this.nudPrecio.Tag = "";
             // 
@@ -462,7 +462,7 @@
             0,
             0});
             this.nudId.Name = "nudId";
-            this.nudId.Size = new System.Drawing.Size(88, 30);
+            this.nudId.Size = new System.Drawing.Size(88, 25);
             this.nudId.TabIndex = 1;
             this.nudId.Tag = "";
             // 
@@ -475,7 +475,7 @@
             this.txtNombre.Location = new System.Drawing.Point(39, 86);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(232, 27);
+            this.txtNombre.Size = new System.Drawing.Size(232, 22);
             this.txtNombre.TabIndex = 0;
             // 
             // label12
@@ -487,7 +487,7 @@
             this.label12.Location = new System.Drawing.Point(305, 153);
             this.label12.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 23);
+            this.label12.Size = new System.Drawing.Size(48, 19);
             this.label12.TabIndex = 160;
             this.label12.Text = "Precio";
             // 
@@ -500,7 +500,7 @@
             this.label3.Location = new System.Drawing.Point(305, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 23);
+            this.label3.Size = new System.Drawing.Size(21, 19);
             this.label3.TabIndex = 158;
             this.label3.Text = "Id";
             // 
@@ -513,7 +513,7 @@
             this.label1.Location = new System.Drawing.Point(34, 64);
             this.label1.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 23);
+            this.label1.Size = new System.Drawing.Size(60, 19);
             this.label1.TabIndex = 147;
             this.label1.Text = "Nombre";
             // 
@@ -527,7 +527,7 @@
             this.panelContainer.Location = new System.Drawing.Point(0, 0);
             this.panelContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1467, 885);
+            this.panelContainer.Size = new System.Drawing.Size(1467, 749);
             this.panelContainer.TabIndex = 153;
             // 
             // panel1
@@ -538,7 +538,7 @@
             this.panel1.Location = new System.Drawing.Point(587, 42);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 843);
+            this.panel1.Size = new System.Drawing.Size(880, 707);
             this.panel1.TabIndex = 144;
             // 
             // splitContainer1
@@ -557,8 +557,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.BtnRestoreView);
             this.splitContainer1.Panel2.Controls.Add(this.PicboxTree);
-            this.splitContainer1.Size = new System.Drawing.Size(880, 843);
-            this.splitContainer1.SplitterDistance = 412;
+            this.splitContainer1.Size = new System.Drawing.Size(880, 707);
+            this.splitContainer1.SplitterDistance = 345;
             this.splitContainer1.TabIndex = 1;
             // 
             // dtgTabla
@@ -573,15 +573,15 @@
             this.dtgTabla.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgTabla.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dtgTabla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(148)))), ((int)(((byte)(162)))));
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgTabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(148)))), ((int)(((byte)(162)))));
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
@@ -593,14 +593,14 @@
             this.Talla,
             this.Material,
             this.Fecha});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgTabla.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgTabla.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgTabla.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgTabla.EnableHeadersVisualStyles = false;
             this.dtgTabla.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -609,25 +609,26 @@
             this.dtgTabla.MultiSelect = false;
             this.dtgTabla.Name = "dtgTabla";
             this.dtgTabla.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgTabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgTabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgTabla.RowHeadersVisible = false;
             this.dtgTabla.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(10);
-            this.dtgTabla.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(10);
+            this.dtgTabla.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgTabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgTabla.ShowCellErrors = false;
             this.dtgTabla.ShowCellToolTips = false;
             this.dtgTabla.ShowEditingIcon = false;
             this.dtgTabla.ShowRowErrors = false;
-            this.dtgTabla.Size = new System.Drawing.Size(878, 410);
+            this.dtgTabla.Size = new System.Drawing.Size(878, 343);
             this.dtgTabla.TabIndex = 148;
+            this.dtgTabla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTabla_CellClick);
             this.dtgTabla.SelectionChanged += new System.EventHandler(this.DtgTabla_SelectionChanged);
             // 
             // Nombre
@@ -826,7 +827,7 @@
             this.label5.Location = new System.Drawing.Point(-3, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 23);
+            this.label5.Size = new System.Drawing.Size(93, 19);
             this.label5.TabIndex = 188;
             this.label5.Text = "Buscar por ID";
             // 
@@ -844,7 +845,7 @@
             0,
             0});
             this.nudSearchId.Name = "nudSearchId";
-            this.nudSearchId.Size = new System.Drawing.Size(94, 30);
+            this.nudSearchId.Size = new System.Drawing.Size(94, 25);
             this.nudSearchId.TabIndex = 188;
             this.nudSearchId.Tag = "";
             // 
@@ -855,7 +856,7 @@
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(587, 885);
+            this.panel5.Size = new System.Drawing.Size(587, 749);
             this.panel5.TabIndex = 127;
             // 
             // pnlDatos
@@ -868,7 +869,7 @@
             this.pnlDatos.Location = new System.Drawing.Point(0, 0);
             this.pnlDatos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(581, 883);
+            this.pnlDatos.Size = new System.Drawing.Size(581, 747);
             this.pnlDatos.TabIndex = 133;
             // 
             // pnlAccesoryData
@@ -906,7 +907,7 @@
             this.pnlAccesoryData.Location = new System.Drawing.Point(0, 0);
             this.pnlAccesoryData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAccesoryData.Name = "pnlAccesoryData";
-            this.pnlAccesoryData.Size = new System.Drawing.Size(581, 883);
+            this.pnlAccesoryData.Size = new System.Drawing.Size(581, 747);
             this.pnlAccesoryData.TabIndex = 161;
             // 
             // btnLlenar
@@ -938,7 +939,7 @@
             this.label9.Location = new System.Drawing.Point(33, 12);
             this.label9.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(359, 37);
+            this.label9.Size = new System.Drawing.Size(289, 30);
             this.label9.TabIndex = 188;
             this.label9.Text = "Arbol Binario de Búsqueda";
             // 
@@ -973,10 +974,10 @@
             // 
             // ABB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1467, 885);
+            this.ClientSize = new System.Drawing.Size(1467, 749);
             this.Controls.Add(this.panelContainer);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);

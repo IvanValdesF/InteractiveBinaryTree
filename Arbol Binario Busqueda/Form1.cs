@@ -1,8 +1,13 @@
-﻿using Svg;
+﻿using SharpDX.Direct2D1;
+using Svg;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using SvgDocument = Svg.SvgDocument;
+using Aspose.Svg;
+using System.Linq;
 
 namespace Arbol_Binario_Busqueda
 {
@@ -12,7 +17,9 @@ namespace Arbol_Binario_Busqueda
         private bool dragging;
         private int xPos;
         private int yPos;
-
+        private SvgDocument arbolSvg = null;
+        private SVGDocument document = null;
+        string[] transformValues = null;
         public ABB()
         {
             InitializeComponent();
@@ -35,7 +42,26 @@ namespace Arbol_Binario_Busqueda
                  }
              }*/
 
-            var arbolSvg = SvgDocument.Open<SvgDocument>("Figura/Figura.svg", null);
+            var proc1 = new ProcessStartInfo();
+            string anyCommand = "\"C:\\Users\\ivanf\\Proyectos\\Arbol-Binario-Busqueda-Form\\Arbol Binario Busqueda\\bin\\Debug\\Dibujar.bat\"";
+            proc1.UseShellExecute = true;
+
+            proc1.WorkingDirectory = @"C:\Windows\System32";
+
+            proc1.FileName = @"C:\Windows\System32\cmd.exe";
+            proc1.Verb = "runas";
+            proc1.Arguments = "/c " + anyCommand;
+            proc1.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(proc1).WaitForExit();
+
+
+            arbolSvg = SvgDocument.Open<SvgDocument>("Figura/Figura.svg", null);
+            document = new SVGDocument("Figura/Figura.svg");
+            var res = "";
+            arbolSvg.GetElementById("graph0").TryGetAttribute("transform", out res);
+            string[] arr = res.Split('(');
+            transformValues = arr[3].Remove(arr[3].Length - 1).Split(',');
+
             try
             {
                 PicboxTree.Image = arbolSvg.Draw();
@@ -260,7 +286,40 @@ namespace Arbol_Binario_Busqueda
                 {
                     Id = (int)selectedRow.Cells["Id"].Value,
                 };
-                Buscar(accesorio);
+
+                var svg = document.DocumentElement;
+                var g = svg.GetElementsByClassName("node");
+
+                foreach (SVGGElement element in g)
+                {
+                    if (element.Id == accesorio.Id.ToString())
+                    {
+
+                        var childrens = arbolSvg.GetElementById(element.Id).Children;
+                        var elipse = childrens.GetSvgElementOf<Svg.SvgEllipse>();
+
+                        elipse.FillOpacity = (float)0.0;
+
+                        Buscar(accesorio);
+                    }
+                    else
+                    {
+                        var childrens = arbolSvg.GetElementById(element.Id).Children;
+                        var elipse = childrens.GetSvgElementOf<Svg.SvgEllipse>();
+                        elipse.FillOpacity = (float)1;
+                    }
+
+                }
+                try
+                {
+                    PicboxTree.Image = arbolSvg.Draw();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                PicboxTree.Refresh();
+
             }
         }
 
@@ -364,10 +423,66 @@ namespace Arbol_Binario_Busqueda
             MessageBox.Show($"Accesorio {accesorio} encontrado. Nombre: {accesorio.Nombre}");
         }
 
+        
         private void PicboxTree_Click(object sender, EventArgs e)
         {
-            MouseEventArgs me = (MouseEventArgs)e;
-            MessageBox.Show(string.Format("X: {0} Y: {1}", (me.X * .75) - 4, (me.Y * .75) - 656));
+            double cx;
+            double cy;
+            if(arbolSvg != null)
+            {
+                MouseEventArgs me = (MouseEventArgs)e;
+                
+                
+                cx = (me.X * .75) - double.Parse(transformValues[0]);
+                cy = (me.Y * .75) - double.Parse(transformValues[1]);
+
+                
+                    var svg = document.DocumentElement;
+                    var g = svg.GetElementsByClassName("node");
+
+                    foreach(SVGGElement element in g)
+                    {
+                        if (cx > element.GetBBox().X && cx < element.GetBBox().X + 50 && cy > element.GetBBox().Y && cy < element.GetBBox().Y + 50)
+                        {
+
+                        var childrens = arbolSvg.GetElementById(element.Id).Children;
+                        var elipse = childrens.GetSvgElementOf<Svg.SvgEllipse>();
+
+                        elipse.FillOpacity = (float)0.0;
+                        AccesorioNadador Acc = new AccesorioNadador()
+                        {
+                            Id = int.Parse(element.Id)
+                        };
+                            Buscar(Acc);
+                        }
+                        else
+                        {
+                        var childrens = arbolSvg.GetElementById(element.Id).Children;
+                        var elipse = childrens.GetSvgElementOf<Svg.SvgEllipse>();
+                        elipse.FillOpacity = (float)1;
+                    }
+                    
+                }
+                try
+                {
+                    PicboxTree.Image = arbolSvg.Draw();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                PicboxTree.Refresh();
+
+            }
+            
+
+            
+            
+        }
+
+        private void dtgTabla_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

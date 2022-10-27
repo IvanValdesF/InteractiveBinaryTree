@@ -169,8 +169,7 @@ namespace Arbol_Binario_Busqueda
 
             using (StreamWriter sw = new("Figura/Figura.dot")) sw.Write(txtDot);
 
-            Process.Start($"{Environment.CurrentDirectory}/Dibujar.bat.lnk").WaitForExit();
-
+            
             void RecorrerNodos(Nodo<T> nodoActual)
             {
                 if (nodoActual == null) return;
